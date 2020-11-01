@@ -1,0 +1,184 @@
+body{
+    background: #58BAC9;
+    box-sizing: border-box;
+}
+
+.app {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 800px;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  background: #8DD1D9;
+}
+
+/* Current City */
+h1 {
+    padding-top: 12px;
+    font-size: 40px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: bolder;
+    text-align: center;
+    color: #E2F4F6;
+}
+
+/* Date&Time */
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    text-align: center; 
+}
+
+/* Current temperature */
+
+.current-temperature {
+    font-family: 'Lato', sans-serif;
+    font-size: 70px;
+    font-weight: bolder;
+    color: #4391A3;
+    position: relative;
+    top: 2px;
+    left: 70px;
+}
+
+.units {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #4391A3;
+    position: relative;
+    bottom: 32px
+}
+
+#celsius-link, #fahrenheit-link {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #4391A3;
+}
+
+/* Weather Details */
+
+.maxima-minima {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4391A3;
+    font-weight: bolder;
+    position: relative;
+    bottom: 92px;
+    left: 185px;
+}
+
+.main-icon {
+    font-family: 'Lato', sans-serif;
+    font-size: 100px;
+    color: #4391A3;
+    font-weight: bolder;
+    position: relative;
+    left: 60px;
+}
+
+.humidity, .wind, .sunrise-sunset {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4391A3;
+    font-weight: bolder; 
+    position: relative;
+    top: 100px;
+    left: 30px;
+}
+
+.fa-tint, .fa-wind, .fa-sun, .fa-moon {
+    font-size: 22px;
+    padding-bottom: 12px;
+}
+
+/* 7 Day Forecast  */
+h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #E2F4F6;
+    text-align: center;
+    word-spacing: 10px;
+}
+
+.forecast {
+    margin-top: 80px;
+}
+
+.forecast .col{
+    border-right: 1px solid  #E2F4F6;
+    width: 100%;
+    padding-right: 2px;
+    padding-left: 2px;
+    text-align: center;
+}
+
+.forecast .col:last-child {
+  border-right: none;
+}
+
+.forecast .fa-cloud-sun-rain, .forecast .fa-cloud-sun,.forecast .fa-cloud, .forecast .fa-cloud-showers-heavy {
+    color: #E2F4F6;
+    font-size: 50px; 
+}
+
+/*Current Location*/
+
+button {
+    display: block;
+    font-size: 12px;
+    font-family: "lato";
+    font-weight: bolder;
+    color:  #4391A3;
+    margin: 12px auto 20px 6px;
+    padding: 8px 12px;
+    background: #8DD1D9;
+    border: 2px solid #4391A3;
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Search City */
+
+.fa-map-marker-alt{
+    color: #4391A3;
+    position: relative;
+    left: 105px;
+    top: 75px;
+}
+
+.form-control-underlined {
+    text-align: center;
+    border-width: 0;
+    border-radius: 0;
+    padding-left: 0;
+    background: none;
+    border-bottom: 1px solid #E2F4F6;
+    margin-top: 40px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background: none;
+    border-bottom: 1px solid #4391A3;
+}
+
+.codedBy {
+    text-align: center;
+    font-family: "lato";
+    margin-top: 12px;
+}
