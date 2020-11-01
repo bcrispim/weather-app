@@ -36,27 +36,36 @@ function search(event) {
 }
 
 function displayWeather(response) {
-    console.log(response.data);
-    
     document.querySelector("#temperature").innerHTML = Math.round(response.data.main.temp);
     document.querySelector("#max").innerHTML = Math.round(response.data.main.temp_max);
     document.querySelector("#min").innerHTML = Math.round(response.data.main.temp_min);
     document.querySelector("#humidity").innerHTML = response.data.main.humidity;
     document.querySelector("#wind-speed").innerHTML = Math.round(response.data.wind.speed);
-    document.querySelector("#sunrise").innerHTML = response.data.sys.sunrise;
-    document.querySelector("#sunset").innerHTML = response.data.sys.sunset;
-}
 
-    // funcion convertTime(sunrise) {
-    // var unix_sunrise = response.data.sys.sunrise
-    // // multiplied by 1000 so that the argument is in milliseconds, not seconds.
-    // var time = new Date(unix_sunrise * 1000);
-    // var hours = time.getHours();
-    // var minutes = "0" + time.getMinutes();
-    // var formatTime = hours + ':' + minutes;
-    // console.log(formatTime);
-    // return formatTime;
-    // }
+    var unixTimestamp = response.data.sys.sunrise
+    var millisecond = unixTimestamp * 1000
+    var dateObject = new Date(millisecond)
+    var humanDateFormat = dateObject.toLocaleString()
+    var hours = dateObject.toLocaleTimeString("pt-PT", { hour: "numeric" })
+    var minutes = dateObject.toLocaleTimeString("pt-PT", { minute: "numeric" })
+    if (minutes < 10) {
+        minutes = '0' + minutes
+    }
+
+    document.querySelector("#sunrise").innerHTML = hours + ':' + minutes
+
+    var unixTimestamp = response.data.sys.sunset
+    var millisecond = unixTimestamp * 1000
+    var dateObject = new Date(millisecond)
+    var humanDateFormat = dateObject.toLocaleString()
+    var hours = dateObject.toLocaleTimeString("pt-PT", { hour: "numeric" })
+    var minutes = dateObject.toLocaleTimeString("pt-PT", { minute: "numeric" })
+    if (minutes < 10) {
+        minutes = '0' + minutes
+    }
+
+    document.querySelector("#sunset").innerHTML = hours + ':' + minutes
+}
 
 let city = document.getElementsByTagName('h1')[0].innerHTML;
 let key = "89418832a1183f5a7d963909563efc4b";
