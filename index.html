@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/3012cccc75.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
-    <title>Week5</title>
+    <title>weather-app</title>
 </head>
 
 <body>
@@ -20,7 +20,7 @@
 
         <div class="shadow app rounded">
 
-            <h1>LISBON</h1> <!-- Current City -->
+            <h1>LISBON</h1> <!-- Default City -->
             <p id="date"></p> <!-- >Current Date&Time -->
 
             <!-- Weather Details -->
@@ -34,95 +34,25 @@
                             <a href="#" id="fahrenheit-link">ºF</a>
                         </span>
                     </div>
-                    <span class="main-icon"><i class="fas fa-cloud-sun-rain"></i></span>
+                    <img scr="" alt="" class="main-icon" id="main-icon">
                     <div class="maxima-minima">
                         &#8593;<span class="max" id="max"></span>º<br>
                         &#8595;<span class="min" id="min"></span>º
                     </div>
                 </div>
                 <div class="col-4">
-                    <div class="humidity"><i class="fas fa-tint"></i>
-                        <span id="humidity"> </span>%
-                    </div>
-                    <div class="wind"><i class="fas fa-wind"></i>
-                        <span id="wind-speed"></span>km/h
+                    <div class="humidity-wind">
+                        <i class="fas fa-tint"></i><span id="humidity"></span>
+                        <i class="fas fa-wind"></i><span id="wind-speed"></span>
                     </div>
                     <div class="sunrise-sunset">
-                        <i class="fas fa-sun"></i><span class="sunrise" id="sunrise"></i></span>h<br>
-                        <i class="fas fa-moon"></i><span class="sunset" id="sunset"></i></span>h
+                        <i class="fas fa-sun"></i><span id="sunrise"></i></span>
+                        <i class="fas fa-moon"></i><span id="sunset"></i></span>
                     </div>
-                </div>
-            </div>
-
-            <!-- 7 Day Forecast -->
-            <div class="row forecast">
-                <div class="col">
-                    <h3>
-                        SAT
-                    </h3>
-                    <i class="fas fa-cloud-sun-rain"></i>
-                    <h3>
-                        18ºC 23ºC
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        SUN
-                    </h3>
-                    <i class="fas fa-cloud-sun-rain"></i>
-                    <h3>
-                        18ºC 25ºC
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        MON
-                    </h3>
-                    <i class="fas fa-cloud-sun"></i>
-                    <h3>
-                        16ºC 27ºC
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        TUE
-                    </h3>
-                    <i class="fas fa-cloud-sun-rain"></i>
-                    <h3>
-                        18ºC 24ºC
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        WED
-                    </h3>
-                    <i class="fas fa-cloud-showers-heavy"></i>
-                    <h3>
-                        16ºC 24ºC
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        THU
-                    </h3>
-                    <i class="fas fa-cloud"></i><br>
-                    <h3>
-                        14ºC 21ºC
-                    </h3>
-                </div>
-                <div class="col">
-                    <h3>
-                        FRI
-                    </h3>
-                    <i class="fas fa-cloud"></i><br>
-                    <h3>
-                        14ºC 23ºC
-                    </h3>
                 </div>
             </div>
 
             <!-- Search City -->
-
             <i class="fas fa-map-marker-alt"></i>
             <form id="search-form">
                 <input type="text" placeholder="Search City" id="search-text-input"

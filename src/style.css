@@ -7,8 +7,8 @@ body{
   margin-top: 60px;
   margin-left: auto;
   margin-right: auto;
-  width: 600px;
-  height: 800px;
+  width: 700px;
+  height: 600px;
   padding: 20px;
   font-weight: 400;
   font-size: 18px;
@@ -42,7 +42,7 @@ p {
     color: #4391A3;
     position: relative;
     top: 2px;
-    left: 70px;
+    left: 90px;
 }
 
 .units {
@@ -69,80 +69,79 @@ p {
     color: #4391A3;
     font-weight: bolder;
     position: relative;
-    bottom: 100px;
-    left: 185px;
+    bottom: 75px;
+    left: 180px;
 }
 
 .main-icon {
-    font-family: 'Lato', sans-serif;
-    font-size: 100px;
-    color: #4391A3;
-    font-weight: bolder;
     position: relative;
-    left: 60px;
+    left: 80px;
 }
 
-.humidity, .wind, .sunrise-sunset {
+.fa-tint {
+    font-size: 22px;
+    color: #4391A3;
+    position: relative;
+    top: 130px;
+    right: 27px;
+    padding-right: 11px;
+    padding-bottom: 6px;
+}
+
+.fa-sun {
+    font-size: 22px;
+    color: #4391A3;
+    position: relative;
+    top: 130px;
+    right: 30px;
+    padding-right: 6px;
+}
+
+#humidity, #sunrise {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     color: #4391A3;
     font-weight: bolder; 
     position: relative;
-    top: 100px;
-    left: 60px;
-}
-
-.fa-tint, .fa-wind, .fa-sun, .fa-moon {
-    font-size: 22px;
-    padding-bottom: 12px;
-    padding-right: 10px;
-}
-
-.fa-tint {
-    padding-right: 13px;
-}
-
-.fa-sun, .fa-moon {
-    font-size: 22px;
-    padding-bottom: 12px;
-    padding-right: 10px;
+    top: 130px;
+    right: 30px;
 }
 
 .fa-wind {
     font-size: 22px;
-    padding-bottom: 10px;
+    color: #4391A3;
+    position: relative;
+    top: 130px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+}
+
+.fa-moon {
+    font-size: 22px;
+    color: #4391A3;
+    position: relative;
+    top: 130px;
+    right: 20px;
     padding-right: 6px;
 }
 
-/* 7 Day Forecast  */
-h3 {
+#sunset {
     font-family: 'Lato', sans-serif;
-    font-size: 12px;
-    font-weight: bolder;
-    color: #E2F4F6;
-    text-align: center;
-    word-spacing: 10px;
+    font-size: 16px;
+    color: #4391A3;
+    font-weight: bolder; 
+    position: relative;
+    top: 130px;
+    right: 20px;
 }
 
-.forecast {
-    margin-top: 80px;
-}
-
-.forecast .col{
-    border-right: 1px solid  #E2F4F6;
-    width: 100%;
-    padding-right: 2px;
-    padding-left: 2px;
-    text-align: center;
-}
-
-.forecast .col:last-child {
-  border-right: none;
-}
-
-.forecast .fa-cloud-sun-rain, .forecast .fa-cloud-sun,.forecast .fa-cloud, .forecast .fa-cloud-showers-heavy {
-    color: #E2F4F6;
-    font-size: 50px; 
+#wind-speed {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #4391A3;
+    font-weight: bolder; 
+    position: relative;
+    top: 130px;
 }
 
 /*Current Location*/
